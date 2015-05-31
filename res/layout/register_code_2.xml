@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BrokenLineView" >
+
+    <LinearLayout
+        android:id="@+id/register_code_2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/content_text"
+                android:layout_gravity="right|center_vertical"
+                android:text="手机号" />
+
+            <EditText
+                android:id="@+id/register_code_2_phone" android:drawableRight="@drawable/star_10px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:inputType="number"
+                android:ems="10" >
+            </EditText>
+        </TableRow>
+
+        <Button
+            android:id="@+id/register_code_2_daojishi"
+            style="@style/button_red"
+            android:layout_width="100dip"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="60秒" />
+
+        <EditText
+            android:id="@+id/register_code_2_code"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content" android:inputType="number"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:ems="10" >
+        </EditText>
+
+        <Button
+            android:id="@+id/register_code_2_next"
+            style="@style/button_red"
+            android:layout_width="100dip"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="下一步" />
+    </LinearLayout>
+
+</LinearLayout>

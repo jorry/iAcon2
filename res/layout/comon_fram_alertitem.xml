@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/acbuwa_page"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+    android:minHeight="30dip"
+    android:background="@android:color/darker_gray"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/common_fram_alertitem_tv"
+        style="@style/content_text" android:layout_weight="1" android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="left|center_vertical" android:layout_marginLeft="10dip"
+        android:gravity="center_vertical" 
+        android:text="alert"
+        android:textColor="@android:color/white" />
+
+<View
+    android:layout_width="fill_parent"
+    android:layout_height="0.5dip"
+    android:layout_gravity="bottom"
+    android:background="@android:color/white" >
+</View>
+
+</LinearLayout>

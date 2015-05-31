@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"  android:paddingTop="5dip"
+    android:paddingBottom="5dip"
+    android:minHeight="40dip"
+    android:orientation="horizontal"
+     >
+
+    <ImageView
+        android:id="@+id/alert_item_icon"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dip"
+        android:background="@drawable/alert_item_quan"
+        android:padding="5dip"
+        android:src="@drawable/a_type_sleep" />
+
+    <LinearLayout
+        android:layout_width="wrap_content" android:layout_weight="1"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/alert_item_title"
+            android:layout_width="wrap_content" android:textColor="@android:color/black"
+            android:layout_height="0dip" android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_marginLeft="10dip" android:layout_gravity="left"
+             android:layout_weight="1"
+            android:text="Small Text"
+            style="@style/content_text"/>
+
+        <TextView
+            android:id="@+id/alert_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:text="Small Text" android:layout_gravity="left"
+            style="@style/content_text"  android:layout_marginLeft="10dip" 
+            android:textColor="@android:color/darker_gray" />
+    </LinearLayout>
+
+    <ToggleButton
+        android:id="@+id/alert_item_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" 
+        android:background="@android:color/transparent"
+        android:button="@drawable/switch_bt" android:focusable="false"
+        android:checked="false"
+        android:text=""
+        android:textOff=""
+        android:textOn="" />
+
+</LinearLayout>

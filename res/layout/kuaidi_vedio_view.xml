@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/acbuwa_page"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        layout="@layout/acbuwa_topbar" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" >
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/u19" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    style="@style/content_text"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="10dip"
+                    android:text="内容摘要"
+                    android:textColor="@android:color/black" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/vedio_zy_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dip"
+                    android:layout_margin="10dip"
+                    android:background="@drawable/u52"
+                    android:gravity="top|left" >
+                </EditText>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:id="@+id/xml_center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/vedio_mm_tv"
+                            android:layout_width="60dip"
+                            android:layout_height="60dip"
+                            android:background="@drawable/u25"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="@android:color/white"
+                            android:textSize="30sp" />
+
+                        <TextView
+                            android:id="@+id/vedio_ss_tv"
+                            android:layout_width="60dip"
+                            android:layout_height="60dip"
+                            android:background="@drawable/u25"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="@android:color/white"
+                            android:textSize="30sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/xml_center"
+                        android:layout_toRightOf="@+id/xml_center"
+                        android:text="秒"
+                        android:textSize="25sp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dip" >
+
+                    <ImageView
+                        android:id="@+id/vedio_ting_img"
+                        android:layout_width="40dip"
+                        android:layout_height="30dip"
+                        android:layout_marginRight="20dip"
+                        android:background="@drawable/u12"
+                        android:padding="4dip"
+                        android:src="@drawable/u65" />
+
+                    <ImageView
+                        android:id="@+id/vedio_delete_img"
+                        android:layout_width="40dip"
+                        android:layout_height="30dip"
+                        android:layout_marginLeft="20dip"
+                        android:background="@drawable/u12"
+                        android:padding="4dip"
+                        android:src="@drawable/u110" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/amplayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/voice_rcd_hint_bg"
+            android:gravity="bottom|center"
+            android:minWidth="140.0dip"
+            android:orientation="horizontal"
+            android:paddingLeft="25.0dip" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15.0dip"
+                android:layout_marginRight="4.0dip"
+                android:src="@drawable/voice_rcd_hint" />
+
+            <ImageView
+                android:id="@+id/amp"
+                android:layout_width="43sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="10dip"
+                android:layout_marginTop="10dip"
+                android:src="@drawable/amp1" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_margin="10dip"
+        android:background="@drawable/u48"
+        android:paddingBottom="5dip"
+        android:paddingTop="5dip" >
+
+        <ImageView
+            android:id="@+id/vedio_changeto_txt"
+            android:layout_width="35dip"
+            android:layout_height="35dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:src="@drawable/u21" />
+
+        <TextView
+            android:id="@+id/vedio_startrecord"
+            style="@style/content_text"
+            android:layout_width="0dip"
+            android:layout_height="35dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_weight="1"
+            android:background="@drawable/u23"
+            android:gravity="center"
+            android:text="按住说话"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/vedio_send_bt"
+            style="@style/button_red"
+            android:layout_height="30dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dip"
+            android:text="发送" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/vedio_save_bt"
+        style="@style/button_red"
+        android:layout_width="fill_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:text="保存为常用"
+        android:textColor="@android:color/white" />
+
+    <include layout="@layout/public_buttom_bt" >
+    </include>
+"
+
+</LinearLayout>

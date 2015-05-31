@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/acbuwa_topbar"
+        style="@style/topbar_bg" >
+
+        <TextView
+            android:id="@+id/topbar_title"
+            style="@style/topbar_text"
+            android:text="提醒详情"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/homeBtn"
+            android:layout_width="35dip"
+            android:layout_height="35dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dip"
+            android:background="@drawable/u8" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="15dip" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dip" >
+
+                <LinearLayout
+                    android:id="@+id/view1_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/imageView1"
+                        android:layout_width="30dip"
+                        android:layout_height="30dip"
+                        android:background="@drawable/alert_yuan"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="1"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp" />
+
+                    <View
+                        android:layout_width="4dip"
+                        android:layout_height="fill_parent" android:layout_marginLeft="2dip"
+                        android:layout_gravity="center_horizontal"
+                        android:background="#FF66CCCC" >
+                    </View>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/alert_1_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:layout_toRightOf="@+id/view1_1"
+                    android:text="选择提醒事项"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <RadioGroup
+                    android:id="@+id/alert_action_type_rg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="70dip"
+                    android:layout_below="@+id/alert_1_tv"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginTop="5dip"
+                    android:layout_toRightOf="@+id/view1_1"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/alert_detail_yd"
+                        style="@style/alert_rd_style"
+                        android:layout_width="0dip"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:drawableTop="@drawable/alert_yundong"
+                        android:paddingTop="10dip"
+                        android:text="运动" >
+                    </RadioButton>
+
+                    <RadioButton
+                        style="@style/alert_rd_style"
+                        android:layout_width="0dip"
+                        android:layout_marginLeft="5dip"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:drawableTop="@drawable/alert_sleep"
+                        android:paddingTop="10dip"
+                        android:text="睡眠" >
+                    </RadioButton>
+
+                    <RadioButton
+                        style="@style/alert_rd_style"
+                        android:layout_width="0dip"
+                        android:layout_marginLeft="5dip"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:drawableTop="@drawable/alert_eat"
+                        android:paddingTop="10dip"
+                        android:text="吃饭" >
+                    </RadioButton>
+
+                    <RadioButton
+                        style="@style/alert_rd_style"
+                        android:layout_width="0dip"
+                        android:layout_marginLeft="5dip"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:drawableTop="@drawable/alert_shui"
+                        android:paddingTop="10dip"
+                        android:text="喝水" >
+                    </RadioButton>
+
+                    <RadioButton
+                        style="@style/alert_rd_style"
+                        android:layout_width="0dip"
+                        android:layout_marginLeft="5dip"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:drawableTop="@drawable/alert_yao"
+                        android:paddingTop="10dip"
+                        android:text="吃药" >
+                    </RadioButton>
+
+                    <RadioButton
+                        style="@style/alert_rd_style"
+                        android:layout_width="0dip"
+                        android:layout_marginLeft="5dip"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:drawableTop="@drawable/alert_other"
+                        android:paddingTop="10dip"
+                        android:text="其他" >
+                    </RadioButton>
+                </RadioGroup>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dip" >
+
+                <View
+                    android:layout_width="4dip"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="15dip"
+                    android:background="#FF66CCCC" >
+                </View>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/imageView1"
+                        android:layout_width="30dip"
+                        android:layout_height="30dip"
+                        android:layout_marginTop="15dip"
+                        android:background="@drawable/alert_yuan"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="2"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/alert_input"
+                    android:layout_width="fill_parent"
+                    android:layout_height="110dip"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/linearLayout1"
+                    android:background="@drawable/u37"
+                    android:ems="10"
+                    android:gravity="left|top"
+                    android:padding="10dip" >
+                </EditText>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dip" >
+
+                <View
+                    android:layout_width="4dip"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="15dip"
+                    android:background="#FF66CCCC" >
+                </View>
+
+                <LinearLayout
+                    android:id="@+id/alert_3_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/imageView1"
+                        android:layout_width="30dip"
+                        android:layout_height="30dip"
+                        android:layout_marginTop="18dip"
+                        android:background="@drawable/alert_yuan"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="3"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/alert_3_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/alert_3_layout"
+                    android:text="选择提醒事项"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_below="@+id/alert_3_tv"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginTop="5dip"
+                    android:layout_toRightOf="@+id/alert_3_layout"
+                    android:orientation="horizontal" >
+
+                    <kankan.wheel.widget.WheelView
+                        android:id="@+id/wheel_d"
+                        android:layout_width="0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1" >
+                    </kankan.wheel.widget.WheelView>
+
+                    <kankan.wheel.widget.WheelView
+                        android:id="@+id/wheel_h"
+                        android:layout_width="0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1" >
+                    </kankan.wheel.widget.WheelView>
+
+                    <kankan.wheel.widget.WheelView
+                        android:id="@+id/wheel_helf"
+                        android:layout_width="0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1" >
+                    </kankan.wheel.widget.WheelView>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dip" >
+
+                <View
+                    android:layout_width="4dip"
+                    android:layout_height="45dip"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="15dip"
+                    android:background="#FF66CCCC" >
+                </View>
+
+                <LinearLayout
+                    android:id="@+id/alert_4_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/imageView1"
+                        android:layout_width="30dip"
+                        android:layout_height="30dip"
+                        android:layout_marginTop="15dip"
+                        android:background="@drawable/alert_yuan"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="4"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp" />
+
+                    <View
+                        android:layout_width="4dip"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:background="#FF66CCCC"
+                        android:visibility="gone" >
+                    </View>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/alert_4_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/alert_4_layout"
+                    android:text="选择提醒事项"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <LinearLayout
+                    android:id="@+id/alert_zhou"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/alert_4_tv"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginTop="5dip"
+                    android:layout_toRightOf="@+id/alert_4_layout"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/alert_rb_1"
+                        style="@style/alert_zhou"
+                        android:background="@drawable/alert_rb_select"
+                        android:text="一" />
+
+                    <TextView
+                        android:id="@+id/alert_rb_2"
+                        style="@style/alert_zhou"
+                        android:layout_marginLeft="5dip"
+                        android:background="@drawable/alert_rb_select"
+                        android:text="二" />
+
+                    <TextView
+                        android:id="@+id/alert_rb_3"
+                        style="@style/alert_zhou"
+                        android:layout_marginLeft="5dip"
+                        android:background="@drawable/alert_rb_select"
+                        android:button="@null"
+                        android:text="三" />
+
+                    <TextView
+                        android:id="@+id/alert_rb_4"
+                        style="@style/alert_zhou"
+                        android:layout_marginLeft="5dip"
+                        android:background="@drawable/alert_rb_select"
+                        android:button="@null"
+                        android:text="四" />
+
+                    <TextView
+                        android:id="@+id/alert_rb_5"
+                        style="@style/alert_zhou"
+                        android:layout_marginLeft="5dip"
+                        android:background="@drawable/alert_rb_select"
+                        android:button="@null"
+                        android:text="五" />
+
+                    <TextView
+                        android:id="@+id/alert_rb_6"
+                        style="@style/alert_zhou"
+                        android:layout_marginLeft="5dip"
+                        android:background="@drawable/alert_rb_select"
+                        android:button="@null"
+                        android:text="六" />
+
+                    <TextView
+                        android:id="@+id/alert_rb_7"
+                        style="@style/alert_zhou"
+                        android:layout_marginLeft="5dip"
+                        android:background="@drawable/alert_rb_select"
+                        android:button="@null"
+                        android:text="七"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/alert_detail_submit"
+        style="@style/button_red"
+        android:layout_width="fill_parent"
+        android:layout_marginBottom="15dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:text="确定" >
+    </Button>
+
+    <include layout="@layout/public_buttom_bt" >
+    </include>
+
+</LinearLayout>

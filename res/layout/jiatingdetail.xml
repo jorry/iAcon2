@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    tools:context=".BrokenLineView" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent" 
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <com.iAcron.view.JiaTingDetailView
+            android:layout_width="match_parent" android:layout_margin="30dip"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/content_text"
+                android:layout_gravity="left"
+                android:text="姓名" />
+
+            <EditText
+                android:id="@+id/jiating_name"
+                style="@style/edit_style"
+                android:ems="10" >
+                  <requestFocus />
+            </EditText>
+
+            <TextView
+                style="@style/content_text"
+                android:layout_gravity="left" 
+                android:layout_marginTop="5dip"
+                android:text="性别" />
+
+            <EditText
+                android:id="@+id/jiating_sex"
+                style="@style/edit_style"
+                android:ems="10" >
+            </EditText>
+
+            <TextView
+                style="@style/content_text"
+                android:layout_gravity="left"
+                  android:layout_marginTop="5dip"
+                android:text="出生" />
+
+            <EditText
+                android:id="@+id/jiating_brith"
+                style="@style/edit_style"
+                android:ems="10" >
+            </EditText>
+
+            <TextView
+                style="@style/content_text"   android:layout_marginTop="5dip"
+                android:layout_gravity="left"
+                android:text="电话" />
+
+            <EditText
+                android:id="@+id/jiating_tel"
+                style="@style/edit_style"
+                android:ems="10" >
+            </EditText>
+
+            <TextView
+                style="@style/content_text"   android:layout_marginTop="5dip"
+                android:layout_gravity="left"
+                android:text="手机" />
+
+            <EditText
+                android:id="@+id/jiating_phone"
+                style="@style/edit_style"
+                android:ems="10" >
+            </EditText>
+
+            <TextView
+                style="@style/content_text"   android:layout_marginTop="5dip"
+                android:layout_gravity="left"
+                android:text="QQ号" />
+
+            <EditText
+                android:id="@+id/jiating_qq"
+                style="@style/edit_style"
+                android:ems="10" >
+            </EditText>
+
+            <TextView
+                style="@style/content_text"
+                android:layout_gravity="left"   android:layout_marginTop="5dip"
+                android:text="邮箱" />
+
+            <EditText
+                android:id="@+id/jiating_email"
+                style="@style/edit_style"
+                android:ems="10" >
+            </EditText>
+
+            <TextView
+                style="@style/content_text"   android:layout_marginTop="5dip"
+                android:layout_gravity="left"
+                android:text="地址" />
+
+            <EditText
+                android:id="@+id/jiating_address"
+                style="@style/edit_style"
+                android:ems="10" >
+            </EditText>
+        </com.iAcron.view.JiaTingDetailView>
+    </ScrollView>
+
+</RelativeLayout>

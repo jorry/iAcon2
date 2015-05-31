@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BrokenLineView" >
+
+    <LinearLayout
+        android:id="@+id/register_code_1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/content_text"
+                android:layout_gravity="right|center_vertical"
+                android:text="注册手机号" />
+
+            <EditText
+                android:id="@+id/code_edit"
+                android:layout_width="wrap_content" 
+                android:inputType="number" android:drawableRight="@drawable/star_10px"
+                android:layout_height="wrap_content"
+                android:ems="10" >
+            </EditText>
+        </TableRow>
+
+        <Button
+            android:id="@+id/register_code1_getcode"
+            style="@style/button_red"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dip"
+            android:layout_marginTop="20dp"
+            android:text="获取验证码" />
+    </LinearLayout>
+
+</LinearLayout>

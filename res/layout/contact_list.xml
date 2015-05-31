@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/contact_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:clickable="false" >
+    </ListView>
+
+    <Button
+        android:id="@+id/contact_list_add"
+        style="@style/button_red"
+        android:layout_width="fill_parent"
+        android:layout_margin="10dip"
+        android:text="添加联系人" />
+
+    <include layout="@layout/public_buttom_bt" >
+    </include>
+
+</LinearLayout>

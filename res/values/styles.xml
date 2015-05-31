@@ -1,0 +1,211 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    
+    <style name="alert_rd_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:background">@drawable/alert_rb_select</item>
+    </style>
+    
+    
+
+    <style name="alert_icon">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="alert_zhou">
+        <item name="android:textSize">15sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_width">25dip</item>
+        <item name="android:layout_height">25dip</item>
+    </style>
+
+    <style name="detail_context">
+        <item name="android:textColor">#b2d8d9</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:lineSpacingExtra">2dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="chat_content_date_style">
+        <item name="android:minHeight">50dp</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:lineSpacingExtra">2dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:background">#bfbfbf</item>
+    </style>
+
+    <style name="common_alert_layout">
+        <item name="android:layout_width">1dip</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">#FF68CDB0</item>
+        <item name="android:paddingTop">5dip</item>
+        <item name="android:paddingBottom">5dip</item>
+    </style>
+
+    <style name="chat_text_name_style">
+        <item name="android:textColor">#818181</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="android:Theme.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/bg</item>
+    </style>
+
+    <style name="edit_style">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">30.0dip</item>
+        <item name="android:background">@drawable/denglu_edit_bg</item>
+    </style>
+
+    <style name="topbar_bg">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/u68</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">40.0dip</item>
+    </style>
+
+    <style name="topbar_text">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!--
+        <item name="android:shadowColor">#40000000</item>
+	    <item name="android:shadowDy">-2.0</item>
+	    <item name="android:shadowRadius">4.0</item>
+        -->
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <style name="menu_text">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!--
+        <item name="android:shadowColor">#40000000</item>
+	    <item name="android:shadowDy">-2.0</item>
+	    <item name="android:shadowRadius">4.0</item>
+        -->
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <style name="nickname_text">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!--
+        <item name="android:shadowColor">#40000000</item>
+	    <item name="android:shadowDy">-2.0</item>
+	    <item name="android:shadowRadius">4.0</item>
+        -->
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <style name="content_text_nomole">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#ff66cccc</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="content_text">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#ff66cccc</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <style name="topbar_btn">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <style name="topbar_left_btn" parent="@style/topbar_btn">
+        <item name="android:layout_alignParentLeft">true</item>
+    </style>
+
+    <style name="button_red">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">35dip</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:background">@drawable/u12</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="button_red_bround">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">30dip</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:background">@drawable/u18</item>
+        <item name="android:textColor">#66ccb8</item>
+    </style>
+
+    <style name="topbar_right_btn" parent="@style/topbar_btn">
+        <item name="android:layout_marginRight">7.0dip</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_height">35dip</item>
+        <item name="android:layout_width">35dip</item>
+    </style>
+
+    <style name="topbar_right_home_btn" parent="@style/topbar_btn">
+        <item name="android:layout_marginRight">7.0dip</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_height">35dip</item>
+        <item name="android:layout_width">35dip</item>
+    </style>
+
+    <style name="DataSheetAnimation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/push_up_in</item>
+    </style>
+
+    <style name="ProgressBarHorizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/progress_horizontal</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+        <item name="android:minHeight">20dip</item>
+        <item name="android:maxHeight">20dip</item>
+    </style>
+
+</resources>

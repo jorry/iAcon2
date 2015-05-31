@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" >
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/bmapView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true" />
+
+        <ImageView
+            android:id="@+id/center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|left"
+            android:layout_margin="15dip"
+            android:src="@drawable/target" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <com.iAcron.view.CommonProgressLayout
+            android:id="@+id/bufaOnClick"
+            style="@style/common_alert_layout"
+            android:layout_width="match_parent"
+            android:layout_margin="0.5dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:src="@drawable/u172" />
+
+            <TextView
+                android:id="@+id/common_bufa_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" />
+        </com.iAcron.view.CommonProgressLayout>
+
+        <com.iAcron.view.CommonProgressLayout
+            android:id="@+id/timeOnClick"
+            style="@style/common_alert_layout"
+            android:layout_width="match_parent"
+            android:layout_margin="0.5dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:src="@drawable/u158" />
+
+            <TextView
+                android:id="@+id/common_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" />
+        </com.iAcron.view.CommonProgressLayout>
+
+        <com.iAcron.view.CommonProgressLayout
+            android:id="@+id/xintiaoOnClick"
+            style="@style/common_alert_layout"
+            android:layout_width="match_parent"
+            android:layout_margin="0.5dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:src="@drawable/u174" />
+
+            <TextView
+                android:id="@+id/common_xintiao_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" />
+        </com.iAcron.view.CommonProgressLayout>
+
+        <com.iAcron.view.CommonProgressLayout
+            android:id="@+id/xueyangOnClick"
+            style="@style/common_alert_layout"
+            android:layout_width="match_parent"
+            android:layout_margin="0.5dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:src="@drawable/u176" />
+
+            <TextView
+                android:id="@+id/common_xueyang_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" />
+        </com.iAcron.view.CommonProgressLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <com.iAcron.view.CommonProgressLayout
+            style="@style/common_alert_layout"
+            android:layout_width="0dip"
+            android:layout_margin="0.5dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:src="@drawable/u146" />
+
+            <TextView
+                android:id="@+id/common_bufa_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" />
+        </com.iAcron.view.CommonProgressLayout>
+
+        <com.iAcron.view.CommonProgressLayout
+            style="@style/common_alert_layout"
+            android:layout_width="0dip"
+            android:layout_margin="0.5dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:src="@drawable/u148" />
+
+            <TextView
+                android:id="@+id/common_bufa_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" />
+        </com.iAcron.view.CommonProgressLayout>
+
+        <com.iAcron.view.CommonProgressLayout
+            android:id="@+id/jiuhuOnClick"
+            style="@style/common_alert_layout"
+            android:layout_margin="0.5dip"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:src="@drawable/u164" />
+
+            <TextView
+                android:id="@+id/common_jiuhu_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" />
+        </com.iAcron.view.CommonProgressLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1dip"
+        android:background="#FF666666"
+        android:orientation="vertical" >
+
+        <LinearLayout 
+            android:id="@+id/alert_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/alert_more_img"
+            android:layout_width="fill_parent"
+            android:layout_height="20dip"
+            android:src="@drawable/u180" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:layout_marginLeft="1dip" >
+
+        <RelativeLayout
+            android:id="@+id/tellayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/gray_bt" >
+
+            <ImageView
+                android:layout_width="35dip"
+                android:layout_height="fill_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/u133" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/chatlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/gray_bt" >
+
+            <ImageView
+                android:id="@+id/u137"
+                android:layout_width="35dip"
+                android:layout_height="fill_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/u137" />
+
+            <TextView
+                android:id="@+id/info_alert"
+                style="@style/content_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/u137"
+                android:layout_alignTop="@+id/u137"
+                android:text=""
+                android:textColor="#ffff0000" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

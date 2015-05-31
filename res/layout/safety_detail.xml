@@ -1,0 +1,285 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="30dp"
+        android:layout_weight="1"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/safetydetail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="60dip"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/detail_context"
+                    android:layout_gravity="left"
+                    android:text="睡眠计划" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/safety_shuimian"
+                        style="@style/edit_style"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1" 
+                        android:inputType="number" >
+
+                        <requestFocus />
+                    </EditText>
+
+                    <TextView
+                        style="@style/detail_context"
+                        android:layout_gravity="left|center_vertical"
+                        android:text="小时/每天" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                style="@style/detail_context"
+                android:layout_gravity="left"
+                android:text="心率" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dip" >
+
+                <EditText
+                    android:id="@+id/safety_xl_start"
+                    style="@style/edit_style"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:ems="10"  
+                    android:inputType="number" >
+                </EditText>
+
+                <View
+                    android:layout_width="30dip"
+                    android:layout_height="1dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="@android:color/darker_gray" >
+                </View>
+
+                <EditText
+                    android:id="@+id/safety_xl_end"
+                    style="@style/edit_style"
+                    android:layout_width="0dip" 
+                    android:layout_weight="1" 
+                    android:ems="10"
+                    android:inputType="number" />
+
+                <TextView
+                    style="@style/detail_context"
+                    android:layout_gravity="left|center_vertical"
+                    android:text="单位(次)" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/detail_context"
+                android:layout_gravity="left"
+                android:text="血氧" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/safety_xy_start"
+                    style="@style/edit_style"
+                    android:layout_weight="1"
+                    android:ems="10" 
+                    android:inputType="numberDecimal" >
+                </EditText>
+
+                <View
+                    android:layout_width="30dip"
+                    android:layout_height="1dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="@android:color/darker_gray" >
+                </View>
+
+                <EditText
+                    android:id="@+id/safety_xy_end"
+                    style="@style/edit_style" android:text="100" 
+                    android:enabled="false"
+                    android:layout_weight="1" 
+                    android:ems="10"
+                    android:inputType="numberDecimal" />
+
+                <TextView
+                    style="@style/detail_context"
+                    android:layout_gravity="left|center_vertical"
+                    android:text="单位(百分比%)" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/detail_context"
+                android:layout_gravity="left"
+                android:text="运动计划" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/safety_yd_plan"
+                    style="@style/edit_style"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number" />
+
+                <TextView
+                    style="@style/detail_context"
+                    android:layout_gravity="left|center_vertical"
+                    android:text="单位(步)" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:orientation="horizontal" >
+            <TextView
+                style="@style/detail_context" android:layout_gravity="center_vertical"
+                android:text="瘫倒" />
+                 <Spinner
+                android:id="@+id/safety_detials_taodan_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/detail_context"
+                android:layout_gravity="left"
+                android:inputType="number"
+                android:text="电子围栏样式" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/safety_detials_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/detail_context"
+                    android:layout_gravity="center_vertical"
+                    android:text="电子围栏" />
+
+                <Button
+                    android:id="@+id/goMap"
+                    style="@style/button_red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dip"
+                    android:layout_marginLeft="5dip"
+                    android:paddingLeft="5dip"
+                    android:paddingRight="5dip"
+                    android:text="地图选点"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/safety_map"
+                style="@style/edit_style"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:layout_weight="1"
+                android:ems="10"
+                android:focusable="false"
+                android:text="(0.0,0.0)" />
+
+            <LinearLayout
+                android:id="@+id/dianzhiweilan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/detail_context"
+                    android:layout_gravity="left"
+                    android:text="电子围栏半径" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/safety_banjing"
+                        style="@style/edit_style"
+                        android:layout_weight="1"
+                        android:ems="10" 
+                        android:inputType="numberDecimal" />
+
+                    <TextView
+                        style="@style/detail_context"
+                        android:layout_gravity="left|center_vertical"
+                        android:text="公里" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                style="@style/detail_context"
+                android:layout_gravity="left"
+                android:text="误差范围" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/safety_wucha"
+                    style="@style/edit_style"
+                    android:ems="10" android:layout_weight="1" 
+                    android:inputType="numberDecimal" />
+
+                <TextView
+                    style="@style/detail_context"
+                    android:layout_gravity="left|center_vertical"
+                    android:text="单位(米)" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/save"
+                style="@style/button_red"
+                android:layout_width="fill_parent"
+                android:layout_marginTop="20dip"
+                android:text="保存" />
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/public_buttom_bt" >
+    </include>
+
+</LinearLayout>

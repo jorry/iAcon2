@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/btn_style_alert_dialog_background"
+    android:gravity="bottom"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/alert_ward_qinqing"
+        style="@style/content_text"
+        android:layout_width="fill_parent" android:layout_gravity="center_horizontal"
+        android:background="@android:color/white"
+        android:text="公告"
+         />
+	<View android:layout_width="fill_parent" android:layout_height="1dip"></View>
+    <Button
+        android:id="@+id/alert_ward_sos"
+        style="@style/content_text"  android:background="@android:color/white"
+        android:layout_width="fill_parent"
+        android:text="帮助" 
+     />
+    <View android:layout_width="fill_parent" android:layout_height="1dip"></View>
+    <Button
+        android:id="@+id/alert_ward_info"
+        style="@style/content_text"
+        android:layout_width="fill_parent"
+        android:text="关于我们"   android:background="@android:color/white"
+         />
+    <View android:layout_width="fill_parent" android:layout_height="1dip"></View>
+    <Button
+        android:id="@+id/exit"
+        style="@style/content_text"  android:background="@android:color/white"
+        android:layout_width="fill_parent"
+        android:text="退出" 
+     />
+    <View android:layout_width="fill_parent" android:layout_height="2dip"></View>
+    <Button
+        android:id="@+id/alert_cancel" 
+        android:layout_width="fill_parent"
+        android:background="@android:color/white"
+        style="@style/content_text"
+        android:text="取消" />
+</LinearLayout>

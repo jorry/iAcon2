@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/acbuwa_page"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/acbuwa_topbar"
+        style="@style/topbar_bg"
+        android:layout_height="46dip" >
+
+        <Button
+            android:id="@+id/menuBtn"
+            style="@style/topbar_right_btn"
+            android:layout_width="35dip"
+            android:layout_height="35dip"
+            android:background="@drawable/u8" />
+
+        <TextView
+            android:id="@+id/topbar_title"
+            style="@style/topbar_text"
+            android:text="测试"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="20dip"
+                android:gravity="center_horizontal" >
+
+                <Button
+                    android:id="@+id/week"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dip"
+                    android:background="@drawable/broken_no"
+                    android:text="周" >
+                </Button>
+
+                <Button
+                    android:id="@+id/month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dip"
+                    android:background="@drawable/broken_select"
+                    android:text="月" />
+            </LinearLayout>
+
+            <com.iAcron.view.MyBrokenline
+                android:id="@+id/lineChart"
+                android:layout_width="fill_parent"
+                android:layout_height="220dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip" >
+            </com.iAcron.view.MyBrokenline>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip" >
+
+                <TextView
+                    android:id="@+id/broken_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="18dip"
+                    android:layout_centerHorizontal="true"
+                    android:text="2014-4-4"
+                    android:textColor="@color/sky_blue" />
+
+                <TextView
+                    android:id="@+id/xingqi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="18dip"
+                    android:layout_below="@+id/broken_time"
+                    android:layout_centerHorizontal="true"
+                    android:text="星期一"
+                    android:textColor="@color/sky_blue" />
+
+                <ImageView
+                    android:id="@+id/id_calendar_proday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_toLeftOf="@+id/broken_time"
+                    android:src="@drawable/u115" />
+
+                <ImageView
+                    android:id="@+id/id_calendar_nxtday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_toRightOf="@+id/broken_time"
+                    android:src="@drawable/u117" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dip"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:layout_marginTop="10dip"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/img"
+                    android:layout_width="25dip"
+                    android:layout_height="25dip"
+                    android:src="@drawable/u103" />
+
+                <FrameLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <ProgressBar
+                        android:id="@+id/progressBar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="20dip"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginRight="5dip"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:progress="20"
+                        android:progressDrawable="@drawable/progress_horizontal" />
+
+                    <com.iAcron.view.ProgressLayout
+                        android:id="@+id/prolayout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="25dip"
+                        android:layout_gravity="center_vertical" >
+                    </com.iAcron.view.ProgressLayout>
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/brokenbartv"
+                    android:layout_width="40dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="0" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView1"
+                style="@style/content_text"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dip"
+                android:text="运动" />
+
+            <Button
+                android:id="@+id/brokenpageBt"
+                style="@style/button_red"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dip"
+                android:paddingBottom="5dip"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:paddingTop="5dip"
+                android:text="获取实时信息"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:layout_gravity="bottom"
+        layout="@layout/public_buttom_bt" >
+    </include>
+
+</LinearLayout>

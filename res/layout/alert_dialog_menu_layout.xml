@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/btn_style_alert_dialog_background"
+    android:gravity="bottom"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/alert_email"
+        style="@style/content_text"
+        android:layout_width="fill_parent"
+        android:text="邮箱找回"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/alert_phone"
+        style="@style/content_text"
+        android:layout_width="fill_parent"
+        android:text="手机找回"
+        android:textColor="@android:color/white" />
+    <Button
+        android:id="@+id/alert_cancel" 
+        android:layout_width="fill_parent"
+        android:textColor="@android:color/white"
+        style="@style/content_text"
+        android:text="取消" />
+</LinearLayout>

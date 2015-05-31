@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.iAcron.view.MyRadioGourp xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="0dip"
+    android:layout_height="fill_parent"
+    android:button="@null"
+    android:checked="true"
+    android:gravity="center" android:paddingLeft="5dip"
+    android:paddingRight="5dip"
+    android:textColor="@drawable/rg_item_text_color"
+    android:text="hh"
+    android:textSize="14.0dip" />

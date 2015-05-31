@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/acbuwa_page"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        layout="@layout/acbuwa_topbar" />
+
+    <LinearLayout
+        android:id="@+id/register_code_1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/content_text"
+                android:layout_width="70dip"
+                android:layout_gravity="right|center_vertical"
+                android:text="新密码"
+                android:textColor="@android:color/black" />
+
+            <EditText
+                android:id="@+id/passwordet"  android:layout_marginLeft="10dip"
+                style="@style/edit_style" 
+                android:layout_width="wrap_content" android:inputType="textPassword"
+                android:layout_height="30dip"
+                android:ems="10" >
+
+                <requestFocus />
+            </EditText>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/content_text"
+                android:layout_width="70dip"
+                android:layout_gravity="right|center_vertical"
+                android:text="确认密码"
+                android:textColor="@android:color/black" />
+
+            <EditText
+                android:id="@+id/configpasword"
+                style="@style/edit_style" android:inputType="textPassword"
+                android:layout_width="wrap_content" android:layout_marginLeft="10dip"
+                android:layout_height="30dip"
+                android:ems="10" />
+        </TableRow>
+
+        <Button
+            android:id="@+id/config"
+            style="@style/button_red" 
+            android:layout_width="fill_parent"
+            android:layout_height="35dip"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dip"
+            android:layout_marginTop="20dp"
+            android:text="确定" />
+    </LinearLayout>
+
+</LinearLayout>

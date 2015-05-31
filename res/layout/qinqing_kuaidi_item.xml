@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    tools:context=".BrokenLineView" >
+
+    <RelativeLayout 
+        android:id="@+id/kuaidi_item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:minWidth="50dip"
+        tools:context=".BrokenLineView" >
+
+        <TextView
+            android:id="@+id/info"
+            style="@style/content_text" android:paddingTop="20dip"
+            android:paddingBottom="20dip" android:layout_marginLeft="20dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:drawableRight="@drawable/u112"
+            android:text="1212121211111111111111" />
+
+        <LinearLayout
+            android:id="@+id/item_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/send"
+                style="@style/button_red"
+                android:layout_height="fill_parent"
+                android:layout_toLeftOf="@+id/delete"
+                android:text="发送" >
+            </Button>
+
+            <ImageView
+                android:id="@+id/delete"
+                android:layout_width="60dip"
+                android:layout_height="fill_parent"
+                android:background="@drawable/u106"
+                android:src="@drawable/u110" >
+            </ImageView>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

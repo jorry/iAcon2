@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/btn_style_alert_dialog_background"
+    android:gravity="bottom"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/alert_ward_qinqing"
+        style="@style/content_text"
+        android:layout_width="fill_parent"
+        android:background="@android:color/white"
+        android:text="亲情快递"
+         />
+    <View android:layout_width="fill_parent" android:layout_height="1dip"  ></View>
+    <Button
+        android:id="@+id/alert_ward_sos_history"  
+        style="@style/content_text"  android:background="@android:color/white"
+        android:layout_width="fill_parent"
+        android:text="警报历史" 
+     />
+    
+    <View android:layout_width="fill_parent" android:layout_height="1dip"  ></View>
+    <Button
+        android:id="@+id/alert_ward_sos_history"   android:visibility="gone"
+        style="@style/content_text"  android:background="@android:color/white"
+        android:layout_width="fill_parent"
+        android:text="警报历史" 
+     />
+	<View android:layout_width="fill_parent" android:layout_height="1dip"  ></View>
+    <Button
+        android:id="@+id/alert_ward_sos_jiechu"  android:visibility="gone"
+        style="@style/content_text"  android:background="@android:color/white"
+        android:layout_width="fill_parent"
+        android:text="解除警报" 
+     />
+    <View android:layout_width="fill_parent" android:layout_height="1dip"></View>
+    <com.iAcron.view.WardButton
+        android:id="@+id/alert_ward_info"  android:visibility="gone"
+        style="@style/content_text" 
+        android:layout_width="fill_parent"
+        android:text="短消息"   android:background="@android:color/white"
+         />
+    <View android:layout_width="fill_parent" android:layout_height="3dip" android:visibility="gone"></View>
+    <Button
+        android:id="@+id/alert_cancel" 
+        android:layout_width="fill_parent"
+        android:background="@android:color/white"
+        style="@style/content_text"
+        android:text="取消" />
+</LinearLayout>

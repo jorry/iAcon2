@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <include layout="@layout/acbuwa_topbar" >
+    </include>
+
+    <TextView
+        android:id="@+id/textView1"
+        style="@style/content_text"
+        android:layout_width="fill_parent"
+        android:layout_height="30dip"
+        android:background="@drawable/xinfeng"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="安全定位"
+        android:textColor="@android:color/black" />
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:clickable="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:gravity="center_horizontal" >
+
+        <TextView
+            android:id="@+id/h_tv"
+            style="@style/button_red"
+            android:layout_width="35dip"
+            android:layout_height="25dip"
+            android:text="12" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/h_h_tv"
+            style="@style/button_red"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_marginLeft="4dip"
+            android:text="时" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/m_tv"
+            style="@style/button_red"
+            android:layout_width="35dip"
+            android:layout_height="25dip"
+            android:layout_marginLeft="4dip"
+            android:text="1" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/m_m_tv"
+            style="@style/button_red"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_marginLeft="4dip"
+            android:text="分" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bufaOnClick"
+        android:layout_width="match_parent"
+        android:layout_height="25dip"
+        android:layout_marginTop="10dip"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_marginLeft="@dimen/common_frag_merge"
+            android:src="@drawable/u103" />
+
+        <ProgressBar
+            android:id="@+id/common_bufa_pro"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dip"
+            android:layout_height="10dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:progress="10"
+            android:progressDrawable="@drawable/progress_horizontal" />
+
+        <TextView
+            android:id="@+id/common_bufa_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dip"
+            android:text="0/0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/timeOnClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/common_frag_merge"
+            android:src="@drawable/u248" />
+
+        <ProgressBar
+            android:id="@+id/common_time_pro"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dip"
+            android:layout_height="10dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/common_frag_merge"
+            android:layout_marginRight="@dimen/common_frag_merge"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:progress="50"
+            android:progressDrawable="@drawable/progress_horizontal_2" />
+
+        <TextView
+            android:id="@+id/common_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dip"
+            android:text="0/0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/xintiaoOnClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_frag_merge"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/common_frag_merge"
+            android:src="@drawable/u107" />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_frag_merge"
+            android:layout_marginRight="@dimen/common_frag_merge"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <com.iAcron.view.ProgressLayout
+                android:id="@+id/common_xintiao_pro_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="25dip"
+                android:layout_gravity="center_vertical" >
+            </com.iAcron.view.ProgressLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/common_xintiao_tv"
+            android:layout_width="@dimen/common_frag_tv"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dip"
+            android:gravity="right"
+            android:text="0次" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/xinlveOnClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/common_frag_merge"
+            android:src="@drawable/u250" />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_frag_merge"
+            android:layout_marginRight="@dimen/common_frag_merge"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <com.iAcron.view.ProgressLayout
+                android:id="@+id/common_xinlv_pro_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="35dip"
+                android:layout_gravity="center_vertical" >
+            </com.iAcron.view.ProgressLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/common_xinlv_tv"
+            android:layout_width="@dimen/common_frag_tv"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dip"
+            android:gravity="right"
+            android:text="0%" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/jiuhuOnClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_frag_merge"
+        android:onClick="jiuhuOnClick"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/common_frag_merge"
+            android:src="@drawable/u111" />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_frag_merge"
+            android:layout_marginRight="@dimen/common_frag_merge"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <com.iAcron.view.ProgressLayout
+                android:id="@+id/common_jiuhu_pro_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="25dip"
+                android:layout_gravity="center_vertical" >
+            </com.iAcron.view.ProgressLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/common_jiuhu_tv"
+            android:layout_width="@dimen/common_frag_tv"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dip"
+            android:gravity="right"
+            android:text="0%" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_marginBottom="2dip"
+        android:layout_marginTop="5dip"
+        android:background="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:layout_marginLeft="1dip" >
+
+        <RelativeLayout
+            android:id="@+id/tellayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/gray_bt" >
+
+            <ImageView
+                android:layout_width="35dip"
+                android:layout_height="fill_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/u133" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/chatlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/gray_bt" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="35dip"
+                android:layout_height="fill_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/u137" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

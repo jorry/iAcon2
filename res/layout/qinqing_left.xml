@@ -1,0 +1,19 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="40dip"
+    android:layout_height="wrap_content" android:id="@+id/qinqing_left_layout"
+    android:background="@drawable/qinqing_left_n" 
+    android:orientation="vertical"
+    tools:context=".BrokenLineView" >
+
+    <TextView
+        android:id="@+id/left_tab"
+        android:layout_width="wrap_content" android:minHeight="70dip"
+        android:layout_height="wrap_content" 
+        android:gravity="center_vertical"
+        android:layout_gravity="center_horizontal" android:textColor="@drawable/bank_show_item_select"
+        android:maxWidth="25dip" android:duplicateParentState="true"
+        android:text="被监护人1"  
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</LinearLayout>
